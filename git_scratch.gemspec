@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kshitij Yadav"]
   spec.email         = ["kshitij.hz@gmail .com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A gem for clearing old commits and refresh git as new initial commit.}
+  spec.homepage      = "https://github.com/kshitij-hz/git_scratch"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
