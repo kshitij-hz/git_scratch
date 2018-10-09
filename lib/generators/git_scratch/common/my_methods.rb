@@ -23,14 +23,19 @@ module CommonMethods
        if get_choice("Want to reset all commits (y/n) : ")
         puts "Resetting all commit messages"
         current_branch = `git rev-parse --abbrev-ref HEAD`
+        sleep 3
         puts "Current Branch => #{current_branch.to_s}"
         `git checkout --orphan latest_branch`
+        sleep 3
         `git add -A`
+        sleep 3
         `git commit -am "git_scratch initial commit"`
+        sleep 3
         `git branch -D master`
+        sleep 3
         `git branch -m master`
+        sleep 3
         `git push -f origin master` if @remote_path.present?
-
         puts "\t Done..."
       end
     rescue => e
