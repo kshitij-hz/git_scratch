@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rails', '>= 3.0.0'
   spec.add_dependency 'thor', '>= 0.19.1'
+  spec.rubyforge_project = 'git_scratch'
 
   spec.files         = `git ls-files`.split("\n")
   spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }

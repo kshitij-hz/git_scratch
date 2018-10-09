@@ -12,7 +12,7 @@ module CommonMethods
   protected
 
   def perform
-    puts "perform in commons...."
+    puts "perform in commons....GitScratch"
   end
 
 end

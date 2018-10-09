@@ -5,7 +5,7 @@ module GitScratch
       include CommonMethods
 
       def renew
-        puts "Ksh..... into method..."
+        puts "Ksh..... renew method...GitScratch"
         perform
       end
     end
