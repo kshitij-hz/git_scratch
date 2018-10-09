@@ -13,7 +13,7 @@ module CommonMethods
 
   def perform
     puts "perform in commons....GitScratch"
-    @remote_path = new_name.to_s.strip
+    @remote_path = new_remote_path.to_s.strip
     change_remote_path
   end
 
