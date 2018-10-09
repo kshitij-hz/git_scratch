@@ -73,7 +73,7 @@ module CommonMethods
       end
       current_remotes = `git remote -v`
       if current_remotes.to_s.strip.present?
-        puts "current remotes => \n #{current_remotes.to_s}"
+        puts "current remotes => \n#{current_remotes.to_s}"
       end
     rescue => e
       puts "error => #{e}"
