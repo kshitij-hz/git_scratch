@@ -22,9 +22,6 @@ module CommonMethods
     begin
        if get_choice("Want to reset all commits (y/n) : ")
         puts "Resetting all commit messages"
-        current_branch = `git rev-parse --abbrev-ref HEAD`
-        sleep 3
-        puts "Current Branch => #{current_branch.to_s}"
         `git checkout --orphan latest_branch`
         sleep 3
         `git add -A`
@@ -35,8 +32,10 @@ module CommonMethods
         sleep 3
         `git branch -m master`
         sleep 3
-        `git push -f origin master` if @remote_path.present?
-        puts "\t Done..."
+        current_branch = `git rev-parse --abbrev-ref HEAD`
+        puts "Current Branch => #{current_branch.to_s}"
+        puts "Use command 'git push -f origin master' to update the repo"
+        
       end
     rescue => e
       puts "error => #{e}"
@@ -76,7 +75,6 @@ module CommonMethods
       if current_remotes.to_s.strip.present?
         puts "current remotes => \n #{current_remotes.to_s}"
       end
-      puts "\t Done..."
     rescue => e
       puts "error => #{e}"
     end
