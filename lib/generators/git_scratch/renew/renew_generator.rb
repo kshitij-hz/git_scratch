@@ -1,4 +1,4 @@
-require File.expand_path('../shared/my_methods', File.dirname(__FILE__))
+require File.expand_path('../common/my_methods', File.dirname(__FILE__))
 module GitScratch
   module Generators
     class RenewGenerator < Rails::Generators::Base
